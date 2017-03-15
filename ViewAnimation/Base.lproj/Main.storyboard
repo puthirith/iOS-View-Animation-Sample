@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEN-oP-MhM">
+                                <rect key="frame" x="132.5" y="436" width="110" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="From Bottom"/>
+                                <connections>
+                                    <action selector="btnFromBottomPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIU-gj-lU0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4Y-CZ-9W8">
+                                <rect key="frame" x="132" y="266" width="110" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="From Left"/>
+                                <connections>
+                                    <action selector="btnFromLeftPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jn-NU-3cn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-fd-wkA">
+                                <rect key="frame" x="132" y="356" width="110" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="From Right"/>
+                                <connections>
+                                    <action selector="btnFromRightPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsJ-ud-ECO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnN-G7-vxw">
+                                <rect key="frame" x="132" y="186" width="110" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="0Hi-J2-Qa0"/>
+                                    <constraint firstAttribute="height" constant="45" id="Qg2-T7-z7e"/>
+                                </constraints>
+                                <state key="normal" title="From Above"/>
+                                <connections>
+                                    <action selector="btnFromAbovePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGr-W1-BFC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2cJ-fd-wkA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45" id="1Xy-GE-jvH"/>
+                            <constraint firstItem="2cJ-fd-wkA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4wr-RG-XMm"/>
+                            <constraint firstItem="uEN-oP-MhM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AwU-hh-pbV"/>
+                            <constraint firstItem="2cJ-fd-wkA" firstAttribute="height" secondItem="hnN-G7-vxw" secondAttribute="height" id="BuP-bb-25S"/>
+                            <constraint firstItem="uEN-oP-MhM" firstAttribute="top" secondItem="2cJ-fd-wkA" secondAttribute="bottom" constant="35" id="Cc4-28-RPO"/>
+                            <constraint firstItem="x4Y-CZ-9W8" firstAttribute="height" secondItem="hnN-G7-vxw" secondAttribute="height" id="Jq6-8h-4Rm"/>
+                            <constraint firstItem="x4Y-CZ-9W8" firstAttribute="width" secondItem="uEN-oP-MhM" secondAttribute="width" id="K4w-2j-N0c"/>
+                            <constraint firstItem="x4Y-CZ-9W8" firstAttribute="top" secondItem="hnN-G7-vxw" secondAttribute="bottom" constant="35" id="R4u-zr-02m"/>
+                            <constraint firstItem="uEN-oP-MhM" firstAttribute="height" secondItem="hnN-G7-vxw" secondAttribute="height" id="aRC-Qt-2kB"/>
+                            <constraint firstItem="hnN-G7-vxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bni-Oj-PPI"/>
+                            <constraint firstItem="uEN-oP-MhM" firstAttribute="width" secondItem="hnN-G7-vxw" secondAttribute="width" id="g4Y-Zw-M8R"/>
+                            <constraint firstItem="2cJ-fd-wkA" firstAttribute="width" secondItem="hnN-G7-vxw" secondAttribute="width" id="lkm-nf-nef"/>
+                            <constraint firstItem="x4Y-CZ-9W8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="okK-bJ-t6u"/>
+                            <constraint firstItem="x4Y-CZ-9W8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yhG-Ag-cDo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFromAbove" destination="hnN-G7-vxw" id="sb1-uZ-sDh"/>
+                        <outlet property="btnFromBottom" destination="uEN-oP-MhM" id="XaF-nj-r0P"/>
+                        <outlet property="btnFromLeft" destination="x4Y-CZ-9W8" id="MrY-BQ-bDQ"/>
+                        <outlet property="btnFromRight" destination="2cJ-fd-wkA" id="NHa-TC-x1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
